@@ -1,0 +1,44 @@
+.collection_item {
+    height: 30rem;
+    flex: 1 1 auto;
+    
+    &:hover {
+        cursor: pointer;
+
+        & .collection_button {
+            visibility: visible;
+        }
+    }
+}
+
+.collection_image {
+    height: 90%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.collection_button {
+    background-color: rgba(206, 206, 206, 0.721);
+    border: none;
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    position: relative;
+    bottom: 2rem;
+    visibility: hidden;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(85, 85, 85, 0.9);
+        color: white;
+    }
+}
+
+.collection_footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}

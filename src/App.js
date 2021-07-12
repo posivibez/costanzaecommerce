@@ -5,6 +5,7 @@ import './App.css';
 
 
 import HomePage from './pages/homepage/homepage.component.jsx'
+import ShopPage from './pages/shoppage/shop.component.jsx'
 import HatsPage from './pages/hatspage/hatspage.component.jsx'
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
     <div>
       <Switch>
         <Route path="/" exact component={HomePage} />
-        <Route path="/hats" component={HatsPage} />
+        <Route path="/shop" exact component={ShopPage} />
+        <Route path="/shop/hats" exact component={HatsPage} />
       </Switch>
     </div>
   );
