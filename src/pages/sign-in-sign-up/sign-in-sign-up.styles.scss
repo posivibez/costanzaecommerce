@@ -1,0 +1,19 @@
+@import '../../sass/variables';
+
+.signin__form {
+    margin-top: 2rem;
+}
+
+.form__submit {
+    margin-top: 1rem;
+}
+
+.sign__in__sign__up {
+    display: flex;
+    margin: 0 $horizontal-margin;
+    gap: 8rem;
+}
+
+.signin {
+    width: 80%;
+}
