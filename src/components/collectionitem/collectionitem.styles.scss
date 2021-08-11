@@ -1,12 +1,37 @@
 .collection_item {
     height: 30rem;
     flex: 1 1 auto;
+    position: relative;
+    
     
     &:hover {
         cursor: pointer;
+    }
 
-        & .collection_button {
-            visibility: visible;
+    &:hover {
+        .collection_image {
+            opacity: 0.8;
+            
+        }
+
+        .custombutton {
+            display: flex;
+            opacity: 0.8;
+        }
+    }
+
+    .custombutton {
+        width: 80%;
+        opacity: 0.7;
+        position:absolute;
+        top: 70%;
+        z-index: 3;
+        left: 50%;
+        transform: translateX(-50%);
+        // display: none;
+
+        &:hover {
+            opacity: 1;
         }
     }
 }
@@ -16,25 +41,9 @@
     width: 100%;
     background-size: cover;
     background-position: center;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-.collection_button {
-    background-color: rgba(206, 206, 206, 0.721);
-    border: none;
-    font-size: 1rem;
-    padding: 1rem 3rem;
-    position: relative;
-    bottom: 2rem;
-    visibility: hidden;
-
-    &:hover {
-        cursor: pointer;
-        background-color: rgba(85, 85, 85, 0.9);
-        color: white;
-    }
+    // display: flex;
+    // align-items: flex-end;
+    // justify-content: center;
 }
 
 .collection_footer {
