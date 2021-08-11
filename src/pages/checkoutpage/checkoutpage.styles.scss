@@ -1,0 +1,35 @@
+@import '../../sass/variables';
+
+.checkout {
+
+    &__page {
+        margin: 4rem $horizontal-margin;
+        font-family: inherit;
+    }
+
+    &__header {
+        display: flex;
+        padding-bottom: 1.5rem;
+        border-bottom: 2px solid lightgrey;
+
+    }
+
+}
+
+.header__block {
+    text-transform: capitalize;
+    width: 23%;
+
+    &:last-child {
+        width: 8%;
+    }
+    & span {
+
+    }
+}
+
+.total {
+    font-size: 2rem;
+    text-align: right;
+    margin-top: 2rem;
+}

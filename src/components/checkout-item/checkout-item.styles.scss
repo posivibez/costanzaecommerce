@@ -1,0 +1,33 @@
+.checkout__item {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid lightgrey;
+
+    & span {
+        font-size: 1.5rem;
+        width: 23%;
+
+        &:last-child {
+            width: 8%;
+        }
+    }
+}
+
+.img__container {
+    width: 23%;
+    padding: 1rem 0;
+    padding-right: 2rem;
+
+    & img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.quantity {
+    padding-left: 20px;
+}
+
+.remove {
+    cursor: pointer;
+}
