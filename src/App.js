@@ -13,7 +13,6 @@ import "./App.scss";
 import Header from "./components/header/header.component.jsx";
 import HomePage from "./pages/homepage/homepage.component.jsx";
 import ShopPage from "./pages/shoppage/shop.component.jsx";
-import HatsPage from "./pages/hatspage/hatspage.component.jsx";
 import SignInSignUpPage from "./pages/sign-in-sign-up/sign-in-sign-up.component";
 import CheckoutPage from './pages/checkoutpage/checkoutpage.component.jsx';
 
@@ -50,8 +49,7 @@ class App extends React.Component {
         <Header></Header>
         <Switch>
           <Route exact path="/" component={HomePage} />
-          <Route exact path="/shop" component={ShopPage} />
-          <Route exact path="/shop/hats" component={HatsPage} />
+          <Route path="/shop" component={ShopPage} />
           <Route exact path="/checkout" component={CheckoutPage} />
           <Route
             exact

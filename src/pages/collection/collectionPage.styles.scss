@@ -1,0 +1,21 @@
+@import '../../sass/variables';
+
+.collection {
+
+    margin: 0 $horizontal-margin;
+
+    &__title {
+
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(12rem, 1fr));
+        grid-gap: 2rem;
+ 
+        &__item {
+            // flex-basis: 21%;
+            // flex-shrink: 0;
+        }
+    }
+}
