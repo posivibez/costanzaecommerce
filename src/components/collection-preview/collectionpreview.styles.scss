@@ -6,6 +6,19 @@
 }
 
 .preview {
-    display: flex;
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4,minmax(12rem, 1fr));
+    grid-gap: 2rem;
+
 }
+@media (max-width: 1000px) {
+ .preview {
+    grid-template-columns: repeat(2,minmax(12rem, 1fr));
+ }   
+}
+
+@media (max-width: 600px) {
+    .preview {
+       grid-template-columns: repeat(1,minmax(12rem, 1fr));
+    }   
+   }
