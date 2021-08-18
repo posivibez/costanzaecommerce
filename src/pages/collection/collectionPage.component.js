@@ -8,20 +8,19 @@ import CollectionItem from "../../components/collectionitem/collectionitem.compo
 
 import "./collectionPage.styles.scss";
 
-const CollectionPage = ({ collection }) => {
-  console.log(collection);
+const CollectionPage = ({ collection, ...otherProps }) => {
 
   return (
     <div className="collection">
       <h1 className="collection__title">{collection.title}</h1>
       <div className="collection__grid">
-        {collection.items.map((item) => {
+        {collection.items ? collection.items.map((item) => {
           return (
-            <div className="collection__grid__item">
+            <div className="collection__grid__item" key={item.id}>
               <CollectionItem key={item.id} item={item} />
             </div>
           );
-        })}
+        }):''}
       </div>
     </div>
   );

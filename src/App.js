@@ -43,7 +43,6 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(this.props.currentUser);
     return (
       <div>
         <Header></Header>
@@ -68,7 +67,7 @@ class App extends React.Component {
 }
 
 const mapStateToProps = createStructuredSelector({
-  currentUser: selectCurrentUser,
+  currentUser: selectCurrentUser
 });
 
 const mapDispatchToProps = (dispatch) => ({

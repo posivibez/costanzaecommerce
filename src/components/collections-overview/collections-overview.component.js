@@ -9,13 +9,15 @@ import './collections-overview.styles.scss';
 
 import CollectionPreview from "../collection-preview/collectionpreview.component";
 
-const CollectionsOverview = ({ shopItems }) => (
+const CollectionsOverview = ({ shopItems }) => {
+  console.log(shopItems);
+  return (
     <div>
       {shopItems.map(({ id, ...otherProps }) => {
         return <CollectionPreview key={id} {...otherProps} />;
       })}
     </div>
-);
+)};
 
 const mapStateToProps = createStructuredSelector({
     shopItems: selectCollectionsForPreview,

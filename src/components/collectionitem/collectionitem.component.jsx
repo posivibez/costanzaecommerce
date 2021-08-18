@@ -17,7 +17,7 @@ const CollectionItem = ({ item, addItem }) => {
           backgroundImage: `url(${imageUrl})`,
         }}
       ></div>
-      <CustomButton inverted onClick={() => addItem(item)}>ADD TO CART</CustomButton>
+      <CustomButton inverted collectionPage onClick={() => addItem(item)}>ADD TO CART</CustomButton>
 
       <div className="collection_footer">
         <span className="name">{name}</span>
