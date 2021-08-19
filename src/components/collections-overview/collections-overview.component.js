@@ -9,8 +9,7 @@ import './collections-overview.styles.scss';
 
 import CollectionPreview from "../collection-preview/collectionpreview.component";
 
-const CollectionsOverview = ({ shopItems }) => {
-  console.log(shopItems);
+const CollectionsOverview = ({ shopItems, ...otherProps }) => {
   return (
     <div>
       {shopItems.map(({ id, ...otherProps }) => {

@@ -19,10 +19,11 @@ export const fetchCollectionsFailure = (errorMessage) => ({
   payload: errorMessage,
 });
 
+//redux thunk middleware is allowing this
+//allowing dispatch of function instead of just
+//action object type as above
 export const fetchCollectionsStartAsync = () => {
   return (dispatch) => {
-
-    console.log('triggered');
     const collectionRef = firestore.collection("Collection");
 
     dispatch(fetchCollectionsStart());

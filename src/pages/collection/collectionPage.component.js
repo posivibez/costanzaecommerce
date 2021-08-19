@@ -9,7 +9,6 @@ import CollectionItem from "../../components/collectionitem/collectionitem.compo
 import "./collectionPage.styles.scss";
 
 const CollectionPage = ({ collection, ...otherProps }) => {
-
   return (
     <div className="collection">
       <h1 className="collection__title">{collection.title}</h1>
