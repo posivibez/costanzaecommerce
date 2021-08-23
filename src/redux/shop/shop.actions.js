@@ -1,7 +1,7 @@
-import {
-  firestore,
-  convertCollectionsSnapshotToMap,
-} from "../../firebase/firebase.utils";
+// import {
+//   firestore,
+//   convertCollectionsSnapshotToMap,
+// } from "../../firebase/firebase.utils";
 
 import ShopActionTypes from "./shop.types";
 
@@ -22,20 +22,21 @@ export const fetchCollectionsFailure = (errorMessage) => ({
 //redux thunk middleware is allowing this
 //allowing dispatch of function instead of just
 //action object type as above
-export const fetchCollectionsStartAsync = () => {
-  return (dispatch) => {
-    const collectionRef = firestore.collection("Collection");
+//LOGIC NOW IN SAGAS
+// export const fetchCollectionsStartAsync = () => {
+//   return (dispatch) => {
+//     const collectionRef = firestore.collection("Collection");
 
-    dispatch(fetchCollectionsStart());
+//     dispatch(fetchCollectionsStart());
 
-    collectionRef
-      .get()
-      .then((snapshot) => {
-        const collectionsMap = convertCollectionsSnapshotToMap(snapshot);
-        // updateCollections(collectionsMap);
-        dispatch(fetchCollectionsSuccess(collectionsMap));
-        // this.setState({ loading: false });
-      })
-      .catch((error) => dispatch(fetchCollectionsFailure(error.message)));
-  };
-};
+//     collectionRef
+//       .get()
+//       .then((snapshot) => {
+//         const collectionsMap = convertCollectionsSnapshotToMap(snapshot);
+//         // updateCollections(collectionsMap);
+//         dispatch(fetchCollectionsSuccess(collectionsMap));
+//         // this.setState({ loading: false });
+//       })
+//       .catch((error) => dispatch(fetchCollectionsFailure(error.message)));
+//   };
+// };

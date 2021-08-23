@@ -54,7 +54,7 @@ const invertedStyles = css`
   }
 `;
 
-export const CustomButton = styled.div`
+export const CustomButton = styled.button`
   background-color: black;
   color: white;
   border: 1px black solid;

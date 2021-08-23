@@ -5,9 +5,9 @@ import React from 'react'
 // import './buttoncustom.styles';
 import { CustomButton } from './buttoncustom.styles';
 
-const ButtonCustom = ({ children, ...otherProps }) => {
+const ButtonCustom = ({ children, type, ...otherProps }) => {
     return (
-        <CustomButton {...otherProps}>
+        <CustomButton type={type} {...otherProps}>
             {children}
         </CustomButton>
     )
