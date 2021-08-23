@@ -15,7 +15,9 @@ import StripeCheckoutButton from "../../components/stripe-button/stripe-button.c
 
 import "./checkoutpage.styles.scss";
 
-const CheckoutPage = ({ cartItems, total }) => (
+const CheckoutPage = ({ cartItems, total }) => {
+  console.log(cartItems);
+  return (
   <div className="checkout__page">
     <div className="checkout__header">
       <div className="header__block">
@@ -49,7 +51,7 @@ const CheckoutPage = ({ cartItems, total }) => (
       4242 4242 4242 4242 -- Exp: 01/20 -- CVV: 123
     </div>
   </div>
-);
+)};
 
 const mapStateToProps = createStructuredSelector({
   cartItems: selectCartItems,
