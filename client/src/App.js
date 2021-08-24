@@ -24,7 +24,8 @@ class App extends React.Component {
 
     const { checkUserSession } = this.props;
     checkUserSession();
-
+    
+    //old code
     // this.unsubscribeFromAuth = auth.onAuthStateChanged(async (userAuth) => {
     //   if (userAuth) {
     //     const userRef = await createUserProfileDocument(userAuth);
