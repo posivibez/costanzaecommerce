@@ -58,25 +58,26 @@ export const convertCollectionsSnapshotToMap = (collections) => {
   }, {});
 };
 
-export const createUserProfileDocument = async (userAuth, additionalData) => {
+export const createUserProfileDocument = async (userAuth, displayName) => {
   if(!userAuth) return;
-
 
   const userRef = firestore.doc(`users/${userAuth.uid}`);
 
   const snapShot = await userRef.get();
 
   if(!snapShot.exists) {
-    const { displayName, email } = userAuth;
+    const { email } = userAuth;
     const createdAt = new Date();
-
+    
+    if(!displayName) {
+      displayName = email.substr(0, email.indexOf('@'));
+    }
+    
     try {
-
       await userRef.set({
         displayName,
         email,
-        createdAt,
-        ...additionalData
+        createdAt
       })
     } catch (error) {
       console.log('error creating user', error.message);
