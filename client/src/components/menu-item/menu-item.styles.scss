@@ -8,13 +8,13 @@
     border: 1px solid black;
     margin: 0 7.5px 15px;
     background-position: center;
-    // background-size: cover;
-    background-size: 100%;
+    background-size: cover;
+    // background-size: 100%;
     transition: all 0.4s ease-in-out;
 
     &:hover {
       cursor: pointer;
-      background-size: 105%;
+      // background-size: 105%;
       // transition: all 0.4s ease-out;
 
       & .content {

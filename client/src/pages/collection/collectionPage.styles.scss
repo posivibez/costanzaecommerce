@@ -4,6 +4,10 @@
 
     margin: 0 $horizontal-margin;
 
+    @media screen and (max-width: 400px) {
+        margin: 0 $horizontal-margin-mobile;
+    }
+
     &__title {
 
     }

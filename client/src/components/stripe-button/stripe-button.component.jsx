@@ -28,9 +28,6 @@ const StripeCheckoutButton = ({ price }) => {
           "There was an issue with your payment and it failed. Please ensure you are using the test credit card listed on the checkout page."
         );
       });
-
-    console.log(token);
-    alert("Payment Succesful");
   };
 
   return (
