@@ -12,6 +12,10 @@
     // background-size: 100%;
     transition: all 0.4s ease-in-out;
 
+    @media screen and (max-width: 600px) {
+      margin-bottom: 2.5rem;
+    }
+
     &:hover {
       cursor: pointer;
       // background-size: 105%;
@@ -34,6 +38,10 @@
 
     &.large {
       height: 380px;
+
+      @media screen and (max-width: 600px) {
+        height: 240px;
+      }
     }
   
     .content {

@@ -24,6 +24,10 @@ const HeaderMainContainer = css`
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+
+  @media screen and (max-width: 600px) {
+    margin: 1rem 2rem;
+  }
 `;
 
 const HeaderLeftContainer = css`
@@ -42,6 +46,10 @@ export const LinkContainer = styled(Link)`
   text-decoration: none;
   cursor: pointer;
   margin-right: 1rem;
+
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
 
   &:last-child {
     margin-right: 0;

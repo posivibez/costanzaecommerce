@@ -7,7 +7,7 @@ const HomePageContainer = styled.div`
   align-items: center;
   padding: 20px 80px;
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 600px) {
     padding: 20px 2rem;
   }
 `;

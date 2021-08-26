@@ -2,7 +2,7 @@
 import { HeaderActionTypes } from './header.types'
 
 const INITIAL_STATE = {
-    hidden: true,
+    mobileMenuHidden: true,
 }
 
 const headerReducer = (state=INITIAL_STATE, action) => {
@@ -10,7 +10,7 @@ const headerReducer = (state=INITIAL_STATE, action) => {
         case HeaderActionTypes.TOGGLE_MOBILE_MENU:
             return {
                 ...state,
-                hidden: !state.hidden
+                mobileMenuHidden: !state.mobileMenuHidden
             }
         default:
             return state;
