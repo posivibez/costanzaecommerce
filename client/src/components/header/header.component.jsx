@@ -34,7 +34,7 @@ const Header = () => {
       </HeaderContainer>
       <HeaderContainer right>
         <LinkContainer to="/shop">SHOP</LinkContainer>
-        <LinkContainer to="/contact">CONTACT</LinkContainer>
+        {/* <LinkContainer to="/contact">CONTACT</LinkContainer> */}
         {currentUser ? (
           <LinkContainer onClick={() => dispatch(signOutStart())}>
             SIGN OUT
